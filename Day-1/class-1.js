@@ -23,7 +23,7 @@
 
 // OPERATOR
 
-// assign , addition , subtraction , division , multiplication modulo operator
+// assign , addition , subtraction , division , multiplication ,modulo operator, Expomential operator.
 
 // what is modulo operator(%) : if we have to find the remainder so we use modulo operator to find the remaineder
 
@@ -70,3 +70,30 @@
 // age++  >> increment "increase"
 
 // age--  >> decrement "decrease"
+
+// What is post increment or decrement and what is pre increment or decrement?(remaining and we will ask questions and disucss it with sir mehtab alam.)
+
+
+// STRING
+
+// What is String? 
+// String is defined as to display anything it may be a single character , multiple words, numbers , and sentences.
+
+// for example
+
+// let book = "The Alchemist";
+// book
+// typeof book
+
+// we can use it same for everything 
+// Now we will discuss can we use single and double qoute in one string 
+// yes but we can use both single and double not one for twice then it will give us error.
+// let bestCar = "My favourite car is'toyota '";
+
+// STRING INDEXING
+// what is string indexing?
+// it is defined as that every character has its own value means position value . indexing means position.
+// for example let fullName = 'Hamad Ullah';
+// so fullName[4] so it will print d.
+
+// to find the lenght of  a string we will use fullName.length or fullName[fullName.length-3];
