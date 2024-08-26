@@ -73,3 +73,19 @@
 // if(firstName == 'Hamad') { 
 //   console.log(`Welcome ${firstName} `);    
 // }
+
+
+// create a traffic light system program?
+
+let color = "red";
+if (color === "red") {
+console.log("STOP")
+}
+
+if(color === "yellow") {
+    console.log("ready yourself")
+}
+
+if(color === "green") {
+    console.log("you can go")
+}
