@@ -77,15 +77,76 @@
 
 // create a traffic light system program?
 
-let color = "red";
-if (color === "red") {
-console.log("STOP")
-}
+// let color = "green";
+// if (color === "red") {
+// console.log("STOP")
+// }
 
-if(color === "yellow") {
-    console.log("ready yourself")
-}
+// if(color === "yellow") {
+//     console.log("ready yourself")
+// }
 
-if(color === "green") {
-    console.log("you can go")
-}
+// if(color === "green") {
+//     console.log("you can go")
+// }
+
+// why we are using === insted of == because it is for case sensitive and thats why we use it.
+
+// ELSE IF STATEMENT
+// else if  statement is defined as when one condition is not valid than utilized the other condition
+// let age = 17;
+
+// if (age >= 18) {
+//     console.log("You are adult");
+// }
+ 
+// else if(age < 18) {
+//     console.log("You are not adult");
+// }
+
+// Marks System
+
+// let marks = 18;
+
+// if(marks >= 80) {
+//     console.log("A++ Bohut zabardast")
+// } 
+// else if(marks >=60) {
+//     console.log("A Zabardast")
+// }
+
+// else if(marks >= 40) {
+//     console.log("B Achi Koshish")
+// }
+
+// else if(marks <= 30) {
+//     console.log("Tum thu malang hu bethe")
+// }
+
+// creating a traffic light system  program with if statement , else if statement , and else statement.
+
+// let color = "red";
+
+// if(color === "red") {
+//     console.log("stop")
+// }else if(color === "yellow") {
+//     console.log("ready")
+// }else if(color === "green") {
+//     console.log("go")
+// }else{
+//     console.log("tujhe nahi dekh raha pagal hain ishara kharab hain chal jaldi kar")
+// }
+
+// We are writing a program for popcorn 
+
+// let popcornSize = "L";
+
+// if(popcornSize === "Xl") {
+//     console.log("The price is Rs:250");
+// } else if(popcornSize === "L") {
+//     console.log("The price is Rs:200");
+// }else if(popcornSize === "M") {
+//     console.log("The price is Rs:100");
+// }else if(popcornSize === "S") {
+//     console.log("THE price is Rs:50");
+// }
