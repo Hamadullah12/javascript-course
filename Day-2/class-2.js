@@ -150,3 +150,73 @@
 // }else if(popcornSize === "S") {
 //     console.log("THE price is Rs:50");
 // }
+
+// NESTED IF STATEMENTSS
+
+// let marks = 79;
+
+// if (marks >= 50) {
+//     console.log("Pass")
+//     if(marks >= 80) {
+//         console.log("Grade : A+")
+//     }else{
+//         console.log("Grade :B")
+//     }
+//     }
+//     else if(marks < 50) {
+//     console.log("Thu bacha insan hain agle dafa de dena pass hojayega")
+// }
+
+// LOGICAL OPERATORS
+
+// 1:LOGICAL AND OPERATOR:  "&&" this is the symbol
+
+// Rules that AND OPERATOR FOLLOW:
+// 1: True and True = true 
+// 2:t and f = false
+// 3:f and t = false
+// 4:f and f = false
+// let marks = 29;
+
+// if (marks >= 33 && marks >= 80) {
+//     console.log("Pass");
+//     console.log("You got A+ Grade");
+// } else if(marks < 33 && marks < 40) {
+//     console.log("Fail");
+//     console.log("Agli dafa karlega");
+// }
+
+// Practice question
+// for logical and operator
+// let methaPhal = "apple";
+
+// if(("apple"[0] === 'a') && ("apple".length > 3)) {
+//     console.log(" its a really good string");
+// } else {
+//     console.log("not a good string");
+// }
+
+// 2:Logical OR Operator: "||"
+
+// it will give us the result if one condition is true
+// T || F = T , F || F = F.
+
+// let marks = 13;
+// if(marks >=33 || marks >= 80) {
+//     console.log("Pass");
+//     console.log("grade A");
+// }else{
+//     console.log("Fail")
+// }
+
+// LOGICAL NOT OPERATOR  "!"
+// is defined as to reverse the result
+
+
+let marks = 53;
+if(!(marks >=33)) {
+    console.log("Pass");
+    console.log("grade A");
+}else{
+    console.log("Fail")
+}
