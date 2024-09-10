@@ -156,7 +156,7 @@
 //     console.log(`Category = ${i}`);
 
 //     for(let j = 0; j<fruits[i].length; j++) {
-    
+
 //         console.log(`fruits = ${j},  ${fruits[i][j]}`);
 //     }
 // }
@@ -169,3 +169,37 @@
 // for (char of fruits) {
 //     console.log( char);
 // }
+
+
+// TO DO APP
+
+let todo = [];
+let userReq = prompt("Enter your request.");
+
+while (true) {
+    if (userReq == 'quit') {
+        console.log("User quit the app.");
+        break;
+    }
+    if (userReq == 'list') {
+        console.log("----------------------");
+        for (let i = 0; i < todo.length; i++) {
+            console.log(i, todo[i]);
+        }
+
+        console.log("----------------------");
+
+    } else if (userReq == 'add') {
+        let task = prompt('Please add the value you want to add .');
+        todo.push(task);
+        console.log("task added.")
+    }else if(userReq == 'delete') {
+        let delet = prompt("Please enter the value you want to delete");
+        todo.splice(delet, 1);
+        console.log("task delted");
+    }else{
+        console.log("wrong request");
+    }
+
+    userReq = prompt("Enter your request.");
+}
