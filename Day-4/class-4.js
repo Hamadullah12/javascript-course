@@ -68,7 +68,7 @@
 
 // We have to write a program for guessing our favt game.
 
-// let favGame = 'COD';
+// const favGame = 'COD';
 // let userGuess = prompt('Guess our favt game ?');
 
 // while( (userGuess != favGame ) && (userGuess != "quit" )) {
@@ -82,3 +82,90 @@
 //     console.log("Thum se na hopayga");
 // }
 
+
+// BREAK:TO eleminate the loop , we mostly used it with while loop.
+
+// const favGame = 'COD';
+// let userGuess = prompt('Guess our favt game ?');
+
+// while( (userGuess != favGame )) {
+//     if(userGuess == "quit") {
+//         console.log("you quit");
+//         break;
+//     }
+//     console.log("wrong");
+//     userGuess = prompt("try again");
+// }
+
+// if(userGuess == favGame) {
+//     console.log("thum thu bare tezz hu");
+// }
+// LOOPS WITH ARRAYS: 
+
+// let fruits = ['apple', 'bannaa', 'grapes', 'pineapple', 'watermelos', 'guvava'];
+
+// for(let i = 0; i < fruits.length; i++) {
+//     console.log(i, fruits[i]);
+// }
+
+// If we have to print odd fruits name
+
+// let fruits = ['apple', 'bannaa', 'grapes', 'pineapple', 'watermelos', 'guvava'];
+
+// for(let i = 1; i < fruits.length; i = i+2) {
+//     console.log(i, fruits[i]);
+// }
+
+
+// For reverse loop
+
+// let fruits = ['apple', 'bannaa', 'grapes', 'pineapple', 'watermelos', 'guvava'];
+
+// for(let i = fruits.length-1; i > 0; i--) {
+//     console.log(i, fruits[i]);
+// }
+
+// we will also use - 1 because it will then give us undefined
+
+// NESTED LOOPS WITH NESTED ARRAYS
+
+// TO access nested arrays we will always use nested loops
+// here in the program the j is used for the index  of individula super heroes.
+// let heros = [
+//     ['super man', 'iron man', 'spider man'],
+//     ['thor', 'flash', 'batman']
+// ];
+
+// for (let i = 0; i<heros.length; i++) {
+//     console.log(i, heros[i]);
+
+//     for(let j = 0; j < heros[i].length; j++) {
+//         console.log(`j = ${j}, ${heros[i][j]}`);
+//     }
+// }
+
+// FOR FRUITS THE SAME LOGIC 
+
+// let fruits = [
+//     ['apple', 'banana', 'cherry'],
+//     ['mango', 'orange', 'pineapple'],
+//     ['grapes', 'blueberry', 'strawberry']
+// ];
+
+// for(let i = 0; i<fruits.length; i++) {
+//     console.log(`Category = ${i}`);
+
+//     for(let j = 0; j<fruits[i].length; j++) {
+    
+//         console.log(`fruits = ${j},  ${fruits[i][j]}`);
+//     }
+// }
+
+
+// FOR OF LOOP : We use for of loop when we have to acces the collections of items.
+// it will not work on chrome browsers
+// let fruits = ['apple', 'banana', 'cherry'];
+
+// for (char of fruits) {
+//     console.log( char);
+// }
