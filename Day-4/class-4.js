@@ -173,33 +173,48 @@
 
 // TO DO APP
 
-let todo = [];
-let userReq = prompt("Enter your request.");
+// let todo = [];
+// let userReq = prompt("What is your request? Please enter it.");
 
-while (true) {
-    if (userReq == 'quit') {
-        console.log("User quit the app.");
-        break;
-    }
-    if (userReq == 'list') {
-        console.log("----------------------");
-        for (let i = 0; i < todo.length; i++) {
-            console.log(i, todo[i]);
-        }
+// while (true) {
+//     if (userReq == 'quit') {
+//         console.log("User quit the app.");
+//         break;
+//     }
+//     if (userReq == 'list') {
+//         console.log("----------------------");
+//         for (let i = 0; i < todo.length; i++) {
+//             console.log(i, todo[i]);
+//         }
 
-        console.log("----------------------");
+//         console.log("----------------------");
 
-    } else if (userReq == 'add') {
-        let task = prompt('Please add the value you want to add .');
-        todo.push(task);
-        console.log("task added.")
-    }else if(userReq == 'delete') {
-        let delet = prompt("Please enter the value you want to delete");
-        todo.splice(delet, 1);
-        console.log("task delted");
-    }else{
-        console.log("wrong request");
-    }
+//     } else if (userReq == 'add') {
+//         let task = prompt('Please add the value you want to add .');
+//         todo.push(task);
+//         console.log("task added.")
+//     }else if(userReq == 'delete') {
+//         let delet = prompt("Please enter the value you want to delete");
+//         todo.splice(delet, 1);
+//         console.log("task delted");
+//     }else{
+//         console.log("wrong request");
+//     }
 
-    userReq = prompt("Enter your request.");
-}
+//     userReq = prompt("Please Enter your next  request.");
+// }
+
+// PROBLEM QUESTIONS: 
+
+// Qs1. Write a JS program to delete all occurrences of element ‘num’ in a given array.
+// Example : if arr = [1, 2, 3, 4, 5, 6, 2, 3] & num = 2
+// Result should be arr = [1, 3, 4, 5, 6, 3]
+
+// let arr = [1, 2, 3, 4, 5, 6, 2, 3];
+// let num = 2;
+
+// for (let i = 0; i<arr.length; i++) {
+//     if(arr[i] == num) {
+//         arr.splice(i, 1);
+//     }
+// }console.log(arr);
