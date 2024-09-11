@@ -188,11 +188,12 @@
 //         }
 
 //         console.log("----------------------");
-
+// adding portion------------------------------------------------------------------------------
 //     } else if (userReq == 'add') {
 //         let task = prompt('Please add the value you want to add .');
 //         todo.push(task);
 //         console.log("task added.")
+// delete portion------------------------------------------------------------------------------
 //     }else if(userReq == 'delete') {
 //         let delet = prompt("Please enter the value you want to delete");
 //         todo.splice(delet, 1);
