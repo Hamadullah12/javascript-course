@@ -45,7 +45,7 @@
 
 // mathOperations(5, 9);
 
-// Taking square and cube using return adn arrow function
+// Taking square and cube using return ann arrow function
 
 // const powerOperations = (n) => {
 //     // return n * n;
@@ -62,3 +62,10 @@
 //     console.log(a ** b);
 // }
 // aToPowerb(2, 5);
+
+// Implicit return : It maens that function will return automatically
+
+const sum = (a, b) => {
+    console.log(a + b);
+}
+sum(4, 8);
