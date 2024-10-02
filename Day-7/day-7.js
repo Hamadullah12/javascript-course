@@ -65,7 +65,61 @@
 
 // Implicit return : It maens that function will return automatically
 
-const sum = (a, b) => {
-    console.log(a + b);
-}
-sum(4, 8);
+// const sum = (a, b) => a + b;
+// console.log(sum(4, 8)); //we dont have to write return keyword to return a fumction this is the smallest way of performing a function.
+
+// // Set time out function : THis is an inbuilt function means alreday defined and the second thing is that it is window define object
+// //Syntax for timeout function
+// console.log("Hi brothers ");//first it will print
+
+// setTimeout ( () => {//pass arrow funciton as an argument and also time out (arrow funciton, time out); we use arrow as a call back fumctiom
+//     console.log("Some value to be print after the given time ");// after 4s value will print
+// }, 4000);
+
+// console.log(" welcome to my place");
+
+// console.log("Welcome to Our website ");
+
+// setTimeout(() => {
+//     console.log("Hope you will enjoy your flight");
+// }, 800);
+// console.log("fly safe");
+
+// set interval: same as the setTImeout fucntion but this will stop it will execute again and again .
+
+// console.log("Hi");
+// let id1 = setInterval(() => {//take it as in a variable and tehn pass it to the clearInterval.
+//     console.log("Hope you will enjoy your flight");
+// }, 400);
+// console.log("hellpppppppppppppp");
+
+// clearInterval(id1);//for terminating or stopping it we use clearInterval
+// This With Arrow Function.
+
+// const studentData = {
+//     name: "Hamad Ullah",
+//     age: 19,
+//     Qualification: "Fsc",
+//     getName: function () {
+//         console.log(this);//gloval scope
+//         return this.name;
+//     },
+//     getData: () => {
+//         console.log(this);//parent scope --> Window .
+//         return this.age;
+//     },
+//     getInfo1: function () {//use setTImeout inbuild fucntion to chech this 
+//         setTimeout(() => {
+//             console.log(this);//so in this case the arrow function will print correctly 
+//         }, 2000);
+//     },
+//     getInfo2: function () {
+//         setTimeout(function() {
+//             console.log(this);//this will print widnow
+//         }, 4000);
+// },
+// };
+// // // console.log(studentData.getName());
+// // console.log(studentData.getData());
+// console.log(studentData.getInfo1());
+// console.log(studentData.getInfo2());
