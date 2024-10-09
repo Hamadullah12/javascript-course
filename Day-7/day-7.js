@@ -108,9 +108,9 @@
 //         console.log(this);//parent scope --> Window .
 //         return this.age;
 //     },
-//     getInfo1: function () {//use setTImeout inbuild fucntion to chech this 
+//     getInfo1: function () {//use setTImeout inbuild fucntion to chech this
 //         setTimeout(() => {
-//             console.log(this);//so in this case the arrow function will print correctly 
+//             console.log(this);//so in this case the arrow function will print correctly
 //         }, 2000);
 //     },
 //     getInfo2: function () {
@@ -123,3 +123,35 @@
 // // console.log(studentData.getData());
 // console.log(studentData.getInfo1());
 // console.log(studentData.getInfo2());
+
+// practive problem
+// let square = (n) => {
+//     return n * n;
+// };
+// console.log(square(9));
+
+// let id = setInterval(() => {
+//     console.log("hello");
+// }, 2000);
+
+// setTimeout(() => {
+//     clearInterval(id);
+//     console.log("bhai bas kar na pora hogaya")
+// }, 10000);
+
+// PRACTICE QUESTIONS
+
+// const arrayAverage = (arr) => {
+//     let total = 0;
+//     for (let number of arr) {
+//         total += number;
+//     }
+//     return total / arr.length;
+
+// };
+// let arr = [1, 2, 3, 4];
+// console.log(arrayAverage(arr));
+
+// for even
+// const isEven = (num) => num % 2 == 0;
+// console.log(isEven(4))
