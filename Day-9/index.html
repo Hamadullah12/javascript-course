@@ -1,100 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Table Tennis</title>
-  </head>
-  <body>
-    <h1 class="Main">Table Tennis</h1>
-    
-    <figure class="Image">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Mondial_Ping_-_Men%27s_Singles_-_Round_4_-_Kenta_Matsudaira-Vladimir_Samsonov_-_57.jpg/600px-Mondial_Ping_-_Men%27s_Singles_-_Round_4_-_Kenta_Matsudaira-Vladimir_Samsonov_-_57.jpg"
-          alt="Table Tennis Tournament"
-        /></figure>
-    <h2>Classroom Tournament Leaderboard</h2>
 
-    <table class="Champion">
-      <tr>
-        <th>Position</th>
-        <th>Name</th>
-        <th>Won</th>
-        <th>Lost</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Marinane Gomez</td>
-        <td>5</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Mohammed Leroy</td>
-        <td>4</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Patrycja Bennett</td>
-        <td>3</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Sam Leeman</td>
-        <td>2</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Yung Lee</td>
-        <td>1</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Astrid Geneve</td>
-        <td>0</td>
-        <td>5</td>
-      </tr>
-    </table>
+<head>
+  <meta charset="UTF-8" />
+  <title>DOM</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<!-- <style> 
+  /* .yellow { */
+    /* color: yellow; */
+    /* text-decoration: underline black wavy; */
+  /* } */
 
-    <hr />
+  /* .group-images { */
+    /* display: flex; */
+  /* } */
 
-    <section class="Section-Page">
-      <h3>Rules of Table Tennis:</h3>
+  /* ; */
 
-      <ol class="Order list">
-        <li>Games are played to <strong>10</strong> points</li>
-        <li>
-          Alternative serves every <strong>2</strong> points are mandatory
-        </li>
-        <li>Make sure to toss the ball straight up when serving</li>
-      </ol>
+  /* .group-images img { */
+    /* margin: 10px; */
+  /* } */
+</style>
+  -->
+<body>
+  <!-- <h1 style="font-weight: 800; color: red;" class="yellow">DOM Day 9</h1>
+  <h1 id="Main" class="head">Table Tennis</h1>
 
-      <p>
-        <i>
-          Official rules can be found on the International Table Tennis website
-          <a href="https://www.ittf.com/">here</a>
-        </i>
-      </p>
-    </section>
+  <figure>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Mondial_Ping_-_Men%27s_Singles_-_Round_4_-_Kenta_Matsudaira-Vladimir_Samsonov_-_57.jpg/600px-Mondial_Ping_-_Men%27s_Singles_-_Round_4_-_Kenta_Matsudaira-Vladimir_Samsonov_-_57.jpg"
+      alt="Table Tennis Tournament" class="tennisImage" width="60%" />
+  </figure>
+  <div class="mainBox">
+    <h3>Hamd d greate</h3>
+    <ul>
+      <li><a href="#" class="links">Ali</a></li>
+      <li><a href="#" class="links">jawad Ali</a></li>
+      <li><a href="#" class="links">ahmed Ali</a></li>
+      <li>
+        <ul>
+          <li><a href="#">New list</a></li>
+          <li><a href="#">Lates news</a></li>
+          <li><a href="#">Viral news</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 
-    <hr />
+  <p class="description">
+    Lorem <b> ipsum dolor sit</b>, amet consectetur adipisicing elit. Accusamus
+    corrupti totam suscipit fugiat <span style="display: none;"> <b> HI I AM NONE AND GIDDEN FOR TEXT CONTENT</b></span>
+    placeat saepe odit dicta quidem nulla veniam qui laudantium. Sunt accusamus aut a!
 
-    <section>
-      <h3>Game Setup:</h3>
-      <p>
-        The game should be set up as per the Table Tennis tournament at Liga
-        Pro.
-      </p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
+    corrupti totam suscipit fugiat perferendis, <i> id distinctio tempora
+      placeat saepe odit </i>dicta quidem nulla veniam qui laudantium. Sunt accusamus aut a!
 
-        <figcaption>
-          <i>
-            Image taken from
-            <a href="https://en.wikipedia.org/wiki/Table_tennis">Wikipedia</a>
-          </i>
-        </figcaption>
-    </section>
-  </body>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
+    corrupti totam suscipit <a href=https://www.google.co.uk>Google</a> fugiat perferendis, id distinctio tempora
+    placeat saepe odit dicta quidem nulla veniam qui laudantium. Sunt accusamus aut a!
+  </p>
+
+  <div class="box">
+    <h3>Hamd d greate</h3>
+    <ul>
+      <li><a href="#" class="links">Ali</a></li>
+      <li><a href="#" class="links">jawad Ali</a></li>
+      <li><a href="#" class="links">ahmed Ali</a></li>
+      <li>
+        <ul>
+          <li><a href="#">New list</a></li>
+          <li><a href="#">Lates news</a></li>
+          <li><a href="#">Viral news</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <h2>Classroom Tournament Leaderboard</h2>
+
+  <table class="Champion">
+    <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Won</th>
+      <th>Lost</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Marinane Gomez</td>
+      <td>5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Mohammed Leroy</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Patrycja Bennett</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Sam Leeman</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Yung Lee</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Astrid Geneve</td>
+      <td>0</td>
+      <td>5</td>
+    </tr>
+  </table>
+
+  <hr />
+
+  <div class="group-images">
+    <img src="./informative-images/3dddddddddddddddddddddd.png" alt="" width="150px" class="testImages">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Mondial_Ping_-_Men%27s_Singles_-_Round_4_-_Kenta_Matsudaira-Vladimir_Samsonov_-_57.jpg/600px-Mondial_Ping_-_Men%27s_Singles_-_Round_4_-_Kenta_Matsudaira-Vladimir_Samsonov_-_57.jpg"
+      alt="" width="150px" class="testImages">
+    <img src="./informative-images/3dddddddddddddddddddddd.png" alt="" width="150px" class="testImages">
+  </div>
+
+  <section class="Section-Page">
+    <h3>Rules of Table Tennis:</h3>
+
+    <ol class="Order list">
+      <li>Games are played to <strong>10</strong> points</li>
+      <li>
+        Alternative serves every <strong>2</strong> points are mandatory
+      </li>
+      <li>Make sure to toss the ball straight up when serving</li>
+    </ol>
+
+    <p>
+      <i>
+        Official rules can be found on the International Table Tennis website
+        <a href="https://www.ittf.com/">here</a>
+      </i>
+    </p>
+  </section>
+
+  <hr />
+
+  <section>
+    <h3>Game Setup:</h3>
+    <p>
+      The game should be set up as per the Table Tennis tournament at Liga
+      Pro.
+    </p>
+
+    <figcaption>
+      <i>
+        Image taken from
+        <a href="https://en.wikipedia.org/wiki/Table_tennis">Wikipedia</a>
+      </i>
+    </figcaption>
+  </section> -->
+  <script src="./day-9.js"></script>
+</body>
+
 </html>
