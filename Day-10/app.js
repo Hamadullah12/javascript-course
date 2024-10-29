@@ -140,16 +140,47 @@
 // More Frequent and easy way for collecting form data
 // In this we will not use query selector for user and password
 
-let form = document.querySelector("form");
-form.addEventListener("submit", function (event) {
-    event.preventDefault();
+// let form = document.querySelector("form");
+// form.addEventListener("submit", function (event) {
+//     event.preventDefault();
     // console.dir(form);
 
-    let user = this.elements[0];//this means form elements and we can acces it through index 
-    let pass = this.elements[1];
+//     let user = this.elements[0];//this means form elements and we can acces it through index
+//     let pass = this.elements[1];
 
-    console.log(user.value) 
-    console.log(pass.value)
+//     console.log(user.value)
+//     console.log(pass.value)
     
-    alert(`Hi welcome ${user.value}, your password is set to ${pass.value} `)
-})
+//     alert(`Hi welcome ${user.value}, your password is set to ${pass.value} `)
+// })
+
+// Change Event and input event
+// these events can be worked when changes occur in input , textarea, and select elements
+
+// let form = document.querySelector("form");
+// form.addEventListener("submit", function (event) {
+//     event.preventDefault();
+// });
+
+// let text = document.querySelector("#text")
+// text.addEventListener("change", function () {
+//     console.log(text.value);
+// });
+// text.addEventListener("input", function () {
+//     console.log(text.value);
+// });
+
+// create a typing in which we type something in the input and pritn above word by word of input in pragrph
+
+// let form = document.querySelector("form")
+// form.addEventListener("submit", function (event) {
+//     event.preventDefault();
+// })
+
+// let type = document.querySelector("#text")
+// let p = document.querySelector("p")
+
+// type.addEventListener("input", function () {
+//     console.log(type.value);
+//     p.innerText = type.value;
+// })
