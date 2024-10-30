@@ -184,3 +184,37 @@
 //     console.log(type.value);
 //     p.innerText = type.value;
 // })
+
+// practice problems
+
+// let btn = document.querySelector("button")
+
+// btn.addEventListener("mouseout", function () {
+//     console.log("mouse has  been out")//when we take away cursor form button then it wil count
+// })
+
+// btn.addEventListener("keypress", function (event) {
+//     console.log("keypress has  been use")//when we click on the button then we have to use any key for this evenet
+// })
+
+// create butto using js and then changes its background color
+
+// let btn = document.createElement("button");
+// let body = document.querySelector("body")
+// body.append(btn)
+// btn.innerText = "Click me "
+
+// btn.addEventListener("click", function () {
+//     btn.style.backgroundColor = "green";
+// })
+
+
+// practice problem 3
+
+// let input = document.querySelector("input");
+// let h2 = document.querySelector("h2");
+
+// input.addEventListener("input", function () {
+//     console.log(input.value);
+//     h2.innerText = input.value;
+// })
