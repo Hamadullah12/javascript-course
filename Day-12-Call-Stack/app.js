@@ -21,19 +21,43 @@
 
 // Visulaization of call stack
 
-function one() {
-    return 1;
-}
+// function one() {
+//     return 1;
+// }
 
-function two() {
-    return one() + one(); //"3" Then one function will call and placed than remove then call and placed 
- }
+// function two() {
+//     return one() + one(); //"3" Then one function will call and placed than remove then call and placed
+//  }
 
-function three() {
-    let ans = two() + one() //"2" it will placed the two function in stack
-    console.log(ans)
-}
+// function three() {
+//     let ans = two() + one() //"2" it will placed the two function in stack
+//     console.log(ans)
+// }
 
-three(); // "1" its the first item that will placed in stack
+// three(); // "1" its the first item that will placed in stack
 
 // so at the process will be continute until the stack become empty
+
+// Call Stack Hell : The nesting of call back is known as call back hell  
+// It is due to the asynchronus nature of js
+
+let h1 = document.querySelector("h1");
+// h1.style.color = "yellow";//this is the one method now if we have to change more than one
+
+function changeColor(color, delay,nextColorChange) {//we take a function to make it easy and color and delay are arguments and nextColorChange is call back
+    setTimeout(() => {
+        h1.style.color = color;
+        nextColorChange();//function
+    }, delay)
+}
+
+// now we have to do nesting of call back
+//as we pass three arguments color , delay , nextColorChange so the below code is 
+//written in this sequence .
+changeColor("red", 1000, () => {
+    changeColor("green", 1000, () => {
+        changeColor("yellow", 1000, () => {
+            changeColor("blue", 1000)
+        })
+    })
+})
