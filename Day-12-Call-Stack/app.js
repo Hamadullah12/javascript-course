@@ -36,7 +36,7 @@
 
 // three(); // "1" its the first item that will placed in stack
 
-// so at the process will be continute until the stack become empty
+// so  the process will be continute until the stack become empty
 
 // Call Stack Hell : The nesting of call back is known as call back hell
 // It is due to the asynchronus nature of js
@@ -62,58 +62,87 @@
 //     })
 // })
 
-// Promises : Later i will define it
-// Explaination : TO store data in database we have to use promises
+// Promises : The completion or failure of the asynchronus operation and its resulting value .
+// Explaination : To store data in database we have to use promises
 // If internet speed is faster than the data will be stored otherwise the data will not be stored
 // Taking a Simple example of storing data in database Using function by imagination
 
-function saveToDb(data, success, failure) {//success and failure are call back. 
-    let internetSpeed = Math.floor(Math.random() * 10) + 1;
-    if (internetSpeed > 4) {
-        success();
-    } else {
-        failure();
-    }
-}
-saveToDb("ham d gamer ",
-    () => {
+// function saveToDb(data, success, failure) {//success and failure are call back.
+//     let internetSpeed = Math.floor(Math.random() * 10) + 1;
+//     if (internetSpeed > 4) {
+//         success();
+//     } else {
+//         failure();
+//     }
+// }
+// saveToDb("ham d gamer ",
+//     () => {
 
-        console.log("fast connection data stored");
-// 1st nesting 
-        saveToDb("Hi brothers", () => {
+//         console.log("fast connection data stored");
+// // 1st nesting
+//         saveToDb("Hi brothers", () => {
 
-            console.log("Success 2: fast connection")
-// 2nd nestin in 1st nesting
-            saveToDb("Hamad Ullah", () => {
+//             console.log("Success 2: fast connection")
+// // 2nd nestin in 1st nesting
+//             saveToDb("Hamad Ullah", () => {
 
-                console.log("success 3: Fast Connection");
+//                 console.log("success 3: Fast Connection");
 
-                saveToDb("Imran khan ", () => {
-                    console.log("Succes 4: Fast connection")
-                }, () => {
-                    console.log("failure 4 :weak connection")
-                })
-            },
-                () => {
+//                 saveToDb("Imran khan ", () => {
+//                     console.log("Succes 4: Fast connection")
+//                 }, () => {
+//                     console.log("failure 4 :weak connection")
+//                 })
+//             },
+//                 () => {
 
-                    console.log("failure 3: weak connection");
-                })
-        },
-            () => {
+//                     console.log("failure 3: weak connection");
+//                 })
+//         },
+//             () => {
 
-                console.log("Failure 2: weak connection ");
+//                 console.log("Failure 2: weak connection ");
 
-            })
-    },
-    () => {
+//             })
+//     },
+//     () => {
 
-        console.log("The data has not been stored , Weak connection try again");
-    })
+//         console.log("The data has not been stored , Weak connection try again");
+//     })
 
 // So here we take arguments and call backs in function saveToDb(), so then we take a random internet speed to get
-// the data because data depend on speed of internet if speed is fast data will be stored in database,if speed is
-// slow data will not stored in database. we take this function as a imaginary datatbase example
+// the data because data depend on speed of internet if speed is faster data will be stored in database,if speed is
+// slower data will not stored in database. we take this function as a imaginary datatbase example
 
 // 2: The important thing is that if first data not stored in database so it will not save other data , if first datat
 // completely stored in a database then it will stored the next data . fo for this in js we have to do call back hell
 // means nesting of call back
+
+// Promises : there are two cases of promises resolve and reject
+// Three states pending , fullfiled, rejected
+// we have to pass resolve and reject as an arguments and call back
+
+function saveToDb(data) {
+    return new Promise((resolve, reject) => {
+        let internetSpeed = Math.floor(Math.random() * 10) + 1;
+        if (internetSpeed > 4) {
+            resolve("Fast connection:Promise was resolved");
+        } else {
+            reject("Weak connection:Promise was rejected");
+        }
+    })
+}
+// console.log(saveToDb("Hamad"))
+
+// Then() & catch() method of promises this method is used for catching errrors
+
+// we will take the above code of promises and we will undetand the syntax also
+// in then and catch they have default function. so this method is more sufficient 
+
+saveToDb("hi")
+    .then(() => {
+        console.log("promise resolved");
+    })
+    .catch(() => {
+        console.log("Promise rejected")
+    })
