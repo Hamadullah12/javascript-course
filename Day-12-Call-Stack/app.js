@@ -137,12 +137,56 @@ function saveToDb(data) {
 // Then() & catch() method of promises this method is used for catching errrors
 
 // we will take the above code of promises and we will undetand the syntax also
-// in then and catch they have default function. so this method is more sufficient 
+// in then and catch they have default function. so this method is more sufficient
 
+// saveToDb("hi")
+//     .then(() => {
+//         console.log("promise resolved");
+//     })
+//     .catch(() => {
+//         console.log("Promise rejected")
+//     })
+
+// Prmises chaining : Its the more improved way to write promises insted of call back hell
+// in this method we have to just write one catch means error for all trys
+// we have to return a new data in the then() and then try it outside that will not cause an error
+// =========================Method 1=================================
+// saveToDb("Hi")
+//     .then(() => {
+//         console.log("Data 1: saved")
+//         // now here we will saved the new data
+//         saveToDb("hello")
+//             .then(() => {
+//                 console.log("data 2: saved ")
+//                 saveToDb("bye")
+//                     .then(() => {
+//                         console.log("data 3:saved")
+//                 })
+//         })
+//     })
+//     .catch(() => {
+//     console.log("Promise rejected")
+// })
+// ==============Error undefined occurs================
+// ================Method 2============================
+// THis is teh more efficent and cleanest way to write it 
 saveToDb("hi")
     .then(() => {
-        console.log("promise resolved");
+        console.log("Data 1: saved");
+        return saveToDb("hello")
     })
+
+    .then(() => {
+        console.log("Data 2: saved")
+        return saveToDb("Bye")
+    })
+
+    .then(() => {
+        console.log("Data 3: saved")
+    })
+
     .catch(() => {
-        console.log("Promise rejected")
+        console.log("Promise was rejected")
     })
+
+    // =======================done this method ==========
