@@ -61,7 +61,28 @@
 //         })
 //     })
 // })
+// Refractoring this code by promises methods
+// let h1 = document.querySelector("h1");
+// function changeColor(color, delay) {//we take a function to make it easy and color and delay are arguments
+//     return new Promise((resolve, reject)=>{
+//          setTimeout(() => {
+//              h1.style.color = color;
+//              resolve("color changed")
+//         }, delay)
+//     })
+// }
 
+// changeColor("red", 1000)
+//     .then(() => {
+//         console.log("red color changed");
+//         return changeColor("blue", 1000)
+//     })
+//     .then(() => {
+//         console.log("blue color changed")
+//         return changeColor("green", 1000);
+//     }).then(() => {
+//     console.log("green color changed ")
+// })
 // Promises : The completion or failure of the asynchronus operation and its resulting value .
 // Explaination : To store data in database we have to use promises
 // If internet speed is faster than the data will be stored otherwise the data will not be stored
@@ -122,16 +143,16 @@
 // Three states pending , fullfiled, rejected
 // we have to pass resolve and reject as an arguments and call back
 
-function saveToDb(data) {
-    return new Promise((resolve, reject) => {
-        let internetSpeed = Math.floor(Math.random() * 10) + 1;
-        if (internetSpeed > 4) {
-            resolve("Fast connection:Promise was resolved");
-        } else {
-            reject("Weak connection:Promise was rejected");
-        }
-    })
-}
+// function saveToDb(data) {
+//     return new Promise((resolve, reject) => {
+//         let internetSpeed = Math.floor(Math.random() * 10) + 1;
+//         if (internetSpeed > 4) {
+//             resolve("Fast connection:Promise was resolved");
+//         } else {
+//             reject("Weak connection:Promise was rejected");
+//         }
+//     })
+// }
 // console.log(saveToDb("Hamad"))
 
 // Then() & catch() method of promises this method is used for catching errrors
@@ -170,23 +191,28 @@ function saveToDb(data) {
 // ==============Error undefined occurs================
 // ================Method 2============================
 // THis is teh more efficent and cleanest way to write it 
-saveToDb("hi")
-    .then(() => {
-        console.log("Data 1: saved");
-        return saveToDb("hello")
-    })
+// saveToDb("hi")
+//     .then((result) => {
+//         console.log("Data 1: saved");
+//         console.log("Promise result :", result)
+//         return saveToDb("hello")
+//     })
 
-    .then(() => {
-        console.log("Data 2: saved")
-        return saveToDb("Bye")
-    })
+//     .then((result) => {
+//         console.log("Data 2: saved")
+//         console.log("Promise result :", result)
+//         return saveToDb("Bye")
+//     })
 
-    .then(() => {
-        console.log("Data 3: saved")
-    })
+//     .then((result) => {
+//         console.log("Data 3: saved")
+//         console.log("Promise result :", result)
+//     })
 
-    .catch(() => {
-        console.log("Promise was rejected")
-    })
+//     .catch((error) => {
+//         console.log("Promise was rejected")
+//         console.log("error result :", error)
+
+//     })
 
     // =======================done this method ==========
