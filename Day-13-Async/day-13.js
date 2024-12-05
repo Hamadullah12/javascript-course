@@ -27,10 +27,10 @@
 // So these are some examples of async keyword or function
 
 
-// Await Keyword:  It pasuss the execution of async function in the surronding until the
-// PRomise is rejected or resolved.
-// It can be just used in await keyword
-// await means to wait
+// Await Keyword:  It pauses the execution of async function in the surronding until the
+// Promise is rejected or resolved.
+// It can be just used in async function.
+// await means to wait.
 
 // function hi() {
 //     return new Promise((resolve, reject) => {
@@ -92,3 +92,41 @@
 // }
 
 // delayColor();
+
+// So here we use try() and catch() for getting error in clean way
+
+// API : Application programming interface
+// When user send request to the api server (link or url ) the  api will search for the
+// data that user demands and then in a respone it will send the data to the user.
+
+// JSON: Javascript object notation
+// it will return data in string format .
+// IT is similar to js object but big differnce betwen them
+// It contain data in key value pair
+
+// How to access data from JSON
+
+// We  can access data from json by converting it to js object by using
+// JSON.parse(data) method .
+// THIs method is used to convert JSON DATA  into object.
+
+// FOr example
+
+// let jsonRes = `{"fact":"If your cat snores, or rolls over on his back to expose his belly, it means he trusts you.","length":90}`
+// console.log(jsonRes)if we want to acces fact key so we cant acces in this format because
+// it is string in json so first we have to convert it into the object
+
+// let jsonObj = JSON.parse('{"fact":"If your cat snores, or rolls over on his back to expose his belly, it means he trusts you.","length":90}')
+// console.log(jsonObj.fact)//lenght now it will act as a obj . so this is the differnce
+
+// now if we have to convert the object into json format so we have to  use JSON.stringify
+
+// let obj = {
+//     name: "Hamad",
+//     age: 19
+// }
+
+// let jsonCon = JSON.stringify(obj);
+// console.log(jsonCon)
+
+// so we easily convet this into json by using JSON.stringify.
