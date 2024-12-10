@@ -15,26 +15,42 @@
 // })
 
 
-let url = "https://catfact.ninja/fact/";
-fetch(url)
-    .then((res) => {
-        console.log(res);
-        return res.json();
-    })
-    .then((data) => {
-        console.log("Data 1: ", data.fact);
-        return fetch(url);
-    }).then((res) => {
-        return res.json();
-    }).then((data2) => {
-        console.log("Data 2:", data2.fact);
-    })
-    .catch((err) => {
-    console.log("Error Caught -", err)
-    })
+// let url = "https://catfact.ninja/fact/";
+// fetch(url)
+//     .then((res) => {
+//         console.log(res);
+//         return res.json();
+//     })
+//     .then((data) => {
+//         console.log("Data 1: ", data.fact);
+//         return fetch(url);
+//     }).then((res) => {
+//         return res.json();
+//     }).then((data2) => {
+//         console.log("Data 2:", data2.fact);
+//     })
+//     .catch((err) => {
+//     console.log("Error Caught -", err)
+//     })
 
 // so this is our first request
     
 // first we fetch url then it give us promise then we use then(res) to get the response and
 // then we convert it to the json by res.json(), after that we get our first data by using then()chaning method
 // as the same process ocuur above .
+
+// Fetch using async and await
+
+let url = "https://catfact.ninja/fact2/";
+
+async function getFacts() {
+    try {
+        let res = await fetch(url);
+    let data = await res.json();
+    console.log(res);
+    console.log(data)
+    } catch (e) {
+        console.log("Error caught:", e);    
+}
+}
+getFacts();
