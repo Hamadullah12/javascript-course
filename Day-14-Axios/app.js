@@ -95,44 +95,78 @@
 // so first take university api then start the project
 
 
-let url = "http://universities.hipolabs.com/search?name="
-//we empty name because we have to add it with url and from input search user will search for that
-let button = document.querySelector("button");
-let lists = document.querySelector("#collLists")
+// let url = "http://universities.hipolabs.com/search?name="
+// //we empty name because we have to add it with url and from input search user will search for that
+// let button = document.querySelector("button");
+// let lists = document.querySelector("#collLists")
 
-button.addEventListener("click", async () => {
-    let country = document.querySelector("input").value;
-    console.log(country);
+// button.addEventListener("click", async () => {
+//     let country = document.querySelector("input").value;
+//     console.log(country);
 
-    let collArr = await getColleges(country);
-    // here we will take call back for returing college name in list 
-    showList(collArr);
+//     let collArr = await getColleges(country);
+//     // here we will take call back for returing college name in list
+//     showList(collArr);
 
-})
-function showList(collArr) {
-    // now we are creating lists in ul to show college on webpage
-    let collLists = document.querySelector("#collLists");
-    collLists.innerText=""
-    //now we will take for of loop for each  college name 
-    for (col of collArr) {
-// list item created here
-        let li = document.createElement("li");
-        li.innerText = col.name;
-        collLists.append(li);
-    }
+// })
+// function showList(collArr) {
+//     // now we are creating lists in ul to show college on webpage
+//     let collLists = document.querySelector("#collLists");
+//     collLists.innerText=""
+//     //now we will take for of loop for each  college name
+//     for (col of collArr) {
+// // list item created here
+//         let li = document.createElement("li");
+//         li.innerText = col.name;
+//         collLists.append(li);
+//     }
 
-}
+// }
 
-// let country = "India";
+// // let country = "India";
 
-async function getColleges(country) {
-    try {
-        let res = await axios.get(url + country);
-        return res.data;
-    } catch (e) {
-        console.log("Error caught;", e);
-        return [];
-    }
-}
+// async function getColleges(country) {
+//     try {
+//         let res = await axios.get(url + country);
+//         return res.data;
+//     } catch (e) {
+//         console.log("Error caught;", e);
+//         return [];
+//     }
+// }
 
 
+
+// practice by myself
+
+// let url = "http://universities.hipolabs.com/search?name=";
+
+// let button = document.querySelector("button");
+// let lists = document.querySelector("#collLists");
+
+// button.addEventListener("click", async () => {
+//     let country = document.querySelector("input").value;
+//     console.log(country);
+//     let collArr = await getColleges(country);
+
+//     showCollege(collArr);
+// })
+
+// function showCollege(collArr) {
+   
+//     for (col of collArr) {
+//         let liOfColl = document.createElement("li");
+//         liOfColl.innerText = col.name;
+//         lists.append(liOfColl);
+//     }
+// }
+
+// async function getColleges(country) {
+//   try {
+//     let res = await axios.get(url  + country);
+//     return(res.data);
+//   } catch (e) {
+//     console.log("Error Caught", e)
+//       return [];
+//   }
+// }
