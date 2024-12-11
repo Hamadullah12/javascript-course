@@ -46,24 +46,45 @@
 
 // Now create a program of getting dog images from api
 
-let button = document.querySelector("button");
-let img = document.querySelector("#result");
+// let button = document.querySelector("button");
+// let img = document.querySelector("#result");
 
-button.addEventListener("click", async () => {
-    let imageRes = await getImages();
-    img.setAttribute("src", imageRes);//we use set attributes when we have source or links 
-    console.log(imageRes);
-})
+// button.addEventListener("click", async () => {
+//     let imageRes = await getImages();
+//     img.setAttribute("src", imageRes);//we use set attributes when we have source or links
+//     console.log(imageRes);
+// })
 
-let url2 = "https://dog.ceo/api/breeds/image/random";
-async function getImages() {
-    try {
-        let res = await axios.get(url2)
-     return res.data.message;
-    } catch (e) {
-        console.log("Error caught;", e);
-        return "Image not found";
-    }
-}
+// let url2 = "https://dog.ceo/api/breeds/image/random";
+// async function getImages() {
+//     try {
+//         let res = await axios.get(url2)
+//      return res.data.message;
+//     } catch (e) {
+//         console.log("Error caught;", e);
+//         return "Image not found";
+//     }
+// }
 
 // so by this way we get multiple dog images.
+
+// Api headers
+
+// let url = "https://icanhazdadjoke.com/"//so by preventing it from html format
+
+// async function getJokes() {
+//     try {
+//         const header = {
+//             headers: {
+//                 Accept: "application/json"
+//             }
+//         };
+//         let res = await axios.get(url, header);
+//         console.log(res.data)
+//     } catch (e) {
+//         console.log("Error caught;",e)
+//     }
+// }
+// ===========================================================================
+// Updating Query string in Axios :
+
