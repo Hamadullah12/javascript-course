@@ -12,34 +12,36 @@
     <div class="main">
         <div id="box">
             <h2 id="quesBox">1: This is a question </h2>
-<div id="optionContainer">
-            <div class="row">
-                <input id="option1" class="options" type="radio" value="a" name="option">
-                <label for="option1">Option 1:</label>
+            <div id="optionContainer">
+                <!-- option A  -->
+                <div class="row">
+                    <input id="option1" class="options" type="radio" value="a" name="option">
+                    <label for="option1">Option 1:</label>
+                </div>
+                <!-- option B -->
 
+                <div class="row">
+                    <input id="option2" class="options" type="radio" value="b" name="option">
+                    <label for="option2">Option 2:</label>
+                </div>
+                <!-- option C  -->
+
+                <div class="row">
+                    <input id="option3" class="options" type="radio" value="c" name="option">
+                    <label for="option3">Option 3:</label>
+
+                </div>
+                <!-- option   D-->
+                <div class="row">
+                    <input id="option4" class="options" type="radio" value="d" name="option">
+                    <label for="option4">Option 4:</label>
+                </div>
+                <button class="btn" onclick="submitQuiz()">Submit</button>
             </div>
-
-            <div class="row">
-                <input id="option2" class="options" type="radio" value="b" name="option">
-                <label for="option2">Option 2:</label>
-            </div>
-
-            <div class="row">
-                <input id="option3" class="options" type="radio" value="c" name="option">
-                <label for="option3">Option 3:</label>
-
-            </div>
-
-            <div class="row">
-                <input id="option4" class="options" type="radio" value="d" name="option">
-                <label for="option4">Option 4:</label>
-            </div>
-            <button class="btn" onclick="submitQuiz()">Submit</button>
         </div>
+
+
     </div>
-
-
-</div>
     <script src="./app.js"></script>
 </body>
 

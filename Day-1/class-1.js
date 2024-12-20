@@ -13,13 +13,13 @@
 // there are 7 different data tyoes
 // Number, string , null, boolean, undefined, bigint, symbol
 
-// TYPEOF   
+// TYPEOF
 // price = 7896;
 // if we dont know that what tyoe of data is it so we will simply type "typeof price" in console ut will give us the data
 
-// NUMBER   
+// NUMBER
 
-// priceOfPen = 15; 
+// priceOfPen = 15;
 
 // OPERATOR
 
@@ -32,20 +32,20 @@
 
 // EXPONENTIAL OPERATOR
 
-// it is used to find the power mean exponentioal 
+// it is used to find the power mean exponentioal
 
 // for example
-// 3**2 = 9 
+// 3**2 = 9
 
-// NaN means not a number. 
+// NaN means not a number.
 // for example >> 0/0 , NaN +-*/1 these will not be a valid number
 
-// LET KEYWORD  
+// LET KEYWORD
 // is defined as the syntax of declaring  a variable
 // let num1 = 2; let num2 = 4; let sum = num1 + num2; sum
 
 
-// CONSTANT KEYWORD 
+// CONSTANT KEYWORD
 
 // is defined as the value that can't be changed mean fixed
 
@@ -56,24 +56,27 @@
 
 // const pi = 3.14; const radius = 5;
 // const area = pi*radius**2;
-// area
+// console.log(area)
 
 
-// ASSIGNMENT OPERATOR
-//  are binary operators
-
-// example >> let age = 34; age += 1: or age -=1; 
+// Assignment operator  are binary operator
+ 
+// example >> let age = 34; age += 1: or age -=1;
 
 // UNIRAY OPERATOR
-// to wrie in short form 
+// to wrie in short form
 
 // age++  >> increment "increase"
 
 // age--  >> decrement "decrease"
 
 // What is post increment or decrement and what is pre increment or decrement?(remaining and we will ask questions and disucss it with sir mehtab alam.)
+// PreIncrement & PreDecrement: THe value in preincrement first change then use
+// let age = 17;
+// console.log(++age);//so here the value will first move to 18 then it will display in preIncrement
 
-
+// Post Increment & Post Decrement: SO in this first value has been used then change
+// console.log(age--); //this is for both increment and decreament and for above also same
 // STRING
 
 // What is String? 

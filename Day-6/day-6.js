@@ -109,15 +109,17 @@
 // console.log(sum(2, 3));
 
 // pracitce questions : create a program in which it return from 1 to n.
+//Create a function that return the concatination of all strings in an array?
 
-// function sumData(n) {
-//     let sum = 0;
-//     for(let i=0; i<=n; i++) {
-//         sum+=i;
-//     }
-//     return sum;
-// }
-// console.log(sumData(6));
+function sumData(n) {
+    // let sum = 0;
+    for(let i=0; i<=n; i++) { 
+        // sum+=i;
+        console.log(i[n])
+    }
+    // return sum;
+}
+console.log(sumData(6));
 
 // SCOPE : It is uased for the accessibility of variable within a specific context . It determine where a variabel have to placed and modified
 
@@ -161,33 +163,111 @@
 
 // WHEN WE ACCESS THE VARIABLE FROM INSIDE TO OUTSIDE
 
-// function outerFunc() {
-//     let a = 7;
-//     let b = 6;
+function outerFunc() {
+    let a = 7;
+    let b = 6;
 
-//     function innerFunc() {
-//         console.log(a+b);
-//         console.log(b);
-//         let c = 9;
-//     }
-//     innerFunc();
-// }
-// console.log(c);// THe error will show that c is not defined
-// outerFunc();
+    function innerFunc() {
+        console.log(a+b);
+        console.log(b);
 
+    }
+   return innerFunc;
+}
+console.log("hi");// THe error will show that c is not defined
+outerFunc();
+
+
+function add(a, b) {
+    console.log(a,b)
+    return a + b;
+}
+
+let sum = add;
+
+function average(a, b, fn) {
+    return fn(a, b) / 2;
+}
+
+let result = average(10, 20, sum);
+
+console.log(result);
 // HOISTIN DO RESEARCH ON THIS BHAIJAN
 
 // WHAT WILL BE THE OUTPUT:
 
-let greet = "hello";//Global scope
+// let greet = "hello";//Global scope
 
-function outerGreet() {
-    let greet = "salam";//function scope
-    console.log(greet);
-    function innerGreet() {
-        console.log(greet);// lexical scope
-    }
-    innerGreet();
-}
-console.log(greet);
-outerGreet();
+// function outerGreet() {
+//     let greet = "salam";//function scope
+//     console.log(greet);
+//     function innerGreet() {
+//         console.log(greet);// lexical scope
+//     }
+//     innerGreet();
+// }
+// console.log(greet);
+// outerGreet();
+
+// FUNCTIONS EXPRESSION : these fumctions are stored in a variabel and have no name so we can call it by their variabel name
+
+// let checVarFunc = function (x, y) {
+//     return x + y;
+// }
+// console.log(checVarFunc(8, 7));
+// HIGHER ORDER FUNCTION : it takes one or more functions as an arguments.
+//multisalam is higher order function cause in this we pass functions as arguments.
+// function multiSalam(func, n) {// the func that is used is a varialbe for calling a function and store salam function and it will run untio i = n.
+//     for (let i = 1; i <= n; i++){
+//         func();
+//     }
+// }
+
+// let salam = function () {
+//     console.log("Assalamu Alaikum");
+// }
+
+// multiSalam(salam, 15);
+
+// RETURN A FUNCTION :
+// WHAT IS FACTORY FUNCTION : It is that type of function which give us new function .
+
+// function oddOrEvenFactory(request) {
+//     if (request == "odd") {
+//         return function (n) {
+//             console.log(!(n % 2 == 0));
+//         }
+//     } else if (request == "even") {
+//      return function (n) {
+//             console.log(n % 2 == 0);
+//         }
+//     } else {
+//         console.log("wrong request");
+//     }
+// }
+// let request = "odd";//or even
+// let checkRequest = oddOrEvenFactory(request);//as we know that we use return so we cannot directlly call it first we have to store it in a varible.
+// checkRequest(75);
+
+// Function method: when a  function is defined in an object then it is calked method< actions that can be performed on an object
+// const calculator = {
+//     add(a, b) {
+//         return a + b;
+//     },
+//     sub(a, b) {
+//         return a - b
+//     },
+//     mult(a, b) {
+//         return a * b;
+//     },
+//     divide(a, b) {
+//         return a / b
+//     },
+// }
+
+// console.log(calculator.add(5, 7));
+// console.log(calculator.sub(5, 7));
+// console.log(calculator.mult(5, 7));
+// console.log(calculator.divide(5, 7));
+
+

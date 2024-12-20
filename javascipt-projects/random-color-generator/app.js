@@ -18,6 +18,10 @@
 
 // =================================Practice by myself============================================
 
+let btn = document.querySelector("button");
+let h2 = document.querySelector("h2")
+
+
 const generateRandomColor = () => {
     const randomCode = Math.floor(Math.random() * 16777215)
     const randomColor = "#" + randomCode.toString(16);
@@ -25,10 +29,6 @@ const generateRandomColor = () => {
     h2.innerText = randomColor;
     document.body.style.backgroundColor = randomColor;
 }
-
-
-let btn = document.querySelector("button");
-let h2 = document.querySelector("h2")
 
 
 btn.addEventListener("click", generateRandomColor)

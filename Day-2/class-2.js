@@ -51,7 +51,6 @@
 
 // If statement
 
-
 // let age = 19;
 
 // if (age >= 18){
@@ -164,7 +163,7 @@
 //     }
 //     }
 //     else if(marks < 50) {
-//     console.log("Thu bacha insan hain agle dafa de dena pass hojayega")
+//     console.log("Thu thu gaya bethe !😁😂🤣")
 // }
 
 // LOGICAL OPERATORS
