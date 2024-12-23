@@ -1,22 +1,14 @@
 import "./App.css";
-
 import {Test1} from "./Test.jsx";
-// import {Multi} from "./Test.jsx";
-
-
+import {Multi} from "./Test.jsx";
+import Products  from "./Products.jsx";
+import ProductsList from "./ProductLists.jsx";
 
 function App() {
     return (
-        <div className="mainbox">
-            <Test1 />
-            {/* <Multi/> */}
-            {/* <Multi/> */}
-            {/* <TestDes/> */}
-            <Test1/>
-            <Test1/>
-            <Test1/>
-            {/* <TestDes/> */}
-        </div>
+        <>
+     <ProductsList/>
+        </>
     ) 
 }
 
