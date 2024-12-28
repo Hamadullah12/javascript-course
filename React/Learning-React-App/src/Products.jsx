@@ -1,12 +1,20 @@
 import "./Products.css";
-function Products({ title, price }) {
-    let isDiscount = price > 6000; 
-    let styles = { backgroundColor: isDiscount ? "red" : "" };
+import Price from "./Price";
+function Products({ title, idx}) {
+    let oldPrice =["500", "600", "900", "490"]
+    let newPrice = ["300", "400", "500", "290"]
+    let prodDesc = [
+       [ "New Classical collection", "New Classical collection"],
+        ["Latest Brands of all features","New Classical collection"],
+        ["Strond supportive bike","New Classical collection"],
+        ["happy user laptops ", "New Classical collection"]
+    ]
     return (
-        <div className="Products" style = {styles}>
-            <h3>{ title }</h3>
-            <h5>Price is {price}</h5>
-            {price > 2000 && <p>Discount 26%</p>}
+        <div className="Products">
+            <h3>{title}</h3>
+            <p>{ prodDesc[idx][0]}</p>
+            <p>{ prodDesc[idx][1]}</p>
+            <Price oldPrice= {oldPrice[idx]} newPrice= {newPrice[idx]} />
     </div>
     )
 }
