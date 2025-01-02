@@ -5,8 +5,8 @@ function App() {
 
   return (
     <>
-      <h2>Increase Count</h2>
-<Counter />
+ <h2>Increase Count</h2>
+<Counter/>
     </>
   )
 }
