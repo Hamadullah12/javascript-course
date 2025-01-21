@@ -1,5 +1,5 @@
-export default function Hello(Props) {
+export default function Hello({Hello, message}) {//destructuring in react props 
     return (
-        <h1>{Props.Hello} {Props.message}</h1>
+        <h1>{Hello} {message}</h1>
     )
 }
