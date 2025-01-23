@@ -1,9 +1,10 @@
-export default function Car({company , color , rating, price}) {
+export default function Car({company , color , rating, price, soldOut}) {
     return (
         <>
             
-            {price > 150 ? (<h1>{company} {color} {rating}{price} </h1>): ""}     
-    
+            <li>
+            {company}{color}{rating}{price}{soldOut ? "soldOut": ""}
+            </li>    
         </>
     )
 }

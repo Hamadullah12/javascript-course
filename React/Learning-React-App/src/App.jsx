@@ -6,11 +6,13 @@ import FormSubmit from "./Form.jsx";
 import Hello from "./React-Code-Stoic/Props.jsx";
 import Cars from "./React-Code-Stoic/Cars.jsx";
 import ConditionalComp from "./React-Code-Stoic/ConditionalComp.jsx";
+import Counter from "./React-Code-Stoic/Counter.jsx";
+import Form from "./React-Code-Stoic/Form.jsx";
 
 function App() {
     return (
         <>
-<Cars/>       
+            <Form />
         </>
     ) 
 }
