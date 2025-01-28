@@ -1,0 +1,9 @@
+.header {
+    background-color: #795079;
+    font-size: 30px;
+    font-weight: bold;
+    height: 80px;
+    text-align: center;
+    line-height: 80px; /* Vertically centers the text within the header */
+    box-shadow: 0 6px 4px rgba(45, 34, 89, 0.3);
+}

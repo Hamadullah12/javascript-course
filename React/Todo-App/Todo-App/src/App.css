@@ -1,0 +1,12 @@
+body {
+    margin: -28px;
+    padding: 0px; /* Add padding: 0 to eliminate any default body padding */
+    font-family: sans-serif;
+}
+
+/* .input{
+    margin-left: 45px;
+}
+.TodoList{
+    margin-left: 45px;
+} */
