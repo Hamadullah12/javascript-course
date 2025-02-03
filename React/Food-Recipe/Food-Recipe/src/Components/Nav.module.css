@@ -1,0 +1,9 @@
+.Nav {
+    text-align: center;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(75, 71, 71);
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
